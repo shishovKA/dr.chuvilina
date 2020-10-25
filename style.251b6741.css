@@ -135,35 +135,41 @@
 .education__list { 
   margin: 0px;
   padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: '🟣';
+  list-style-position: inside;
 }
 
 .education__item {
-  list-style-type: none; 
+  box-sizing: border-box;
   margin: 5px 0px 0px 0px;
-  padding: 0px;
+  padding: 0px 0px 0px 6px;
+}
+
+.education__item::marker {
+  font-size: 10px;
 }
 
 .education__text_main {
-  list-style-type: none; 
-  margin: 0px;
-  padding: 0px; 
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #000000;
-  
-}
-
-.education__text {
-  list-style-type: none; 
+  display: inline;
   margin: 0px;
   padding: 0px; 
   line-height: 18px;
   font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.education__text {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px 0px 0px 18px;
+  line-height: 18px;
+  font-size: 13px;
   font-weight: normal;
   color: #000000;
   font-style: normal;
- 
 }
 
 .section__title_place_services { 
