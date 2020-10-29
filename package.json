@@ -1,0 +1,28 @@
+{
+  "name": "dr.chuvilina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url https://shishovka.github.io/dr.chuvilina/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shishovKA/dr.chuvilina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shishovKA/dr.chuvilina/issues"
+  },
+  "homepage": "https://github.com/shishovKA/dr.chuvilina#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
