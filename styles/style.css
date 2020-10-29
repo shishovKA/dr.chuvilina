@@ -90,7 +90,7 @@
 .section {
   padding: 20px 0px 0px 0px;
   width: 100%;
-  background-color:  #F7F6F3;
+  background-color: #F7F6F3;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -286,17 +286,17 @@
 }
 
 .button_diplom {
-  padding: 4px;
-  width: 70%;
+  padding: 2px;
+  padding-bottom: 5px;
+  width: 65%;
   align-self: center;
   text-align: center;
   cursor: pointer;
   background-color: #e6e5e3;
-  line-height: 16px;
+  line-height: 18px;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  color: #000000;
 }
 
 .certificate {
@@ -344,4 +344,25 @@
 }
 
 
+.popup {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.diploma {
+  height: 30%;
+}
+
+.hide {
+  display: none;
+}
 
