@@ -9,7 +9,7 @@
 
 .page {
   box-sizing: border-box; 
-  padding: 0px 25px 20px 35px;
+  padding: 0px 25px 20px 25px;
   width: 100%;
   min-width: 320px;
   max-width: 480px;
@@ -128,9 +128,10 @@
   font-size: 18px;
   padding-bottom: 5px;
   border-radius: 5px;
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.5);
+
   background-color: #e6e5e3;
   text-align: center;
+  border: solid 2px black;
 }
 
 .education__list { 
@@ -185,7 +186,7 @@
 
 .section__title_place_services {
   text-align: center;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.8em;
 }
 
 .services__container {
@@ -196,6 +197,7 @@
 }
 
 .services__card {
+  border: solid 2px black;
   box-sizing: border-box;
   width: 48%;
   display: flex;
@@ -203,7 +205,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.5);
   margin-bottom: 10px;
   background-color: rgba(89,212,171,0.35);
 }
@@ -225,7 +226,7 @@
 .services__textcontainer {
   background-color: rgba(256,256,256,0.5);
   border-radius: 10px;
-  margin: 4px 5px;
+  margin: 8px 5px;
 }
 
 .services__text {
@@ -238,19 +239,9 @@
   text-align: center;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  background-color: rgba(89,212,171, 0.7);
+/* дипломы */
 
-  box-sizing: border-box; 
-  padding: 0px 25px 0px 35px;
-  width: 100%;
-  min-width: 320px;
-  max-width: 480px;
-  margin: 0 auto;
-  font-family: 'Be Vietnam', sans-serif;
-}
+
 
 .reserve__container{
   margin-top: 10px;
@@ -259,7 +250,7 @@
   justify-content: space-around;
 }
 
-.section_reserve {
+.section_diplomas {
   padding-top: 10px;
 }
 
@@ -269,16 +260,47 @@
 }
 
 .button {
+  border: solid 2px black;
   box-sizing: border-box;
-  width: 48%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
+  transition: all 0.4s ease 0s;
 }
 
 .button:hover {
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+  transition: all 0.4s ease 0s;
+}
+
+.diplomas__container{
+  margin-top: 10px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  align-self: center;
+
+}
+
+.button_diplom {
+  padding: 4px;
+  width: 70%;
+  align-self: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: #e6e5e3;
+  line-height: 16px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+.certificate {
+  width: 20%;
 }
 
 .link {
@@ -294,6 +316,8 @@
   padding: 5px;
   border-radius: 10px;
   text-decoration:none;
+  display: flex;
+  align-items: center;
 }
 
 .button_clinic {
@@ -304,7 +328,20 @@
   background-color: rgb(59, 197, 151);
 }
 
+.footer {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+  background-color: rgba(89,212,171, 0.7);
 
+  box-sizing: border-box; 
+  padding: 0px 25px 0px 35px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 480px;
+  margin: 0 auto;
+  font-family: 'Be Vietnam', sans-serif;
+}
 
 
 
