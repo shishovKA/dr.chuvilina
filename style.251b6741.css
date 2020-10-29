@@ -286,17 +286,17 @@
 }
 
 .button_diplom {
-  padding: 4px;
-  width: 70%;
+  padding: 2px;
+  padding-bottom: 5px;
+  width: 65%;
   align-self: center;
   text-align: center;
   cursor: pointer;
   background-color: #e6e5e3;
-  line-height: 16px;
+  line-height: 18px;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  color: #000000;
 }
 
 .certificate {
