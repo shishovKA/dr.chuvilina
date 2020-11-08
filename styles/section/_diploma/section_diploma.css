@@ -1,0 +1,41 @@
+
+  
+  .section__title_place_diplomas {
+    text-align: center;
+    align-self: center;
+  }
+  
+  
+  .section__text_btn_diploma {
+    width: 45%;
+    line-height: 16px;
+    font-size: 16px;
+    margin: 0px;
+    text-align: start;
+    text-align: center;
+  }
+  
+  .diplomas__container{
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    align-self: center;
+  
+  }
+  
+  .button_diplom {
+    width: 45%;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e6e5e3;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .certificate {
+    width: 30%;
+    padding: 0px 30px;
+  }

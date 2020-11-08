@@ -1,0 +1,53 @@
+@import "./_name/section_name.css";
+@import "./_education/section_education.css";
+@import "./_services/section_services.css";
+@import "./_reserve/section_reserve.css";
+@import "./_diploma/section_diploma.css";
+
+
+
+.section {
+    padding: 30px 0px 0px 0px;
+    width: 100%;
+    background-color: #F7F6F3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .section_name {
+    align-items: stretch;
+    margin: 0px 0px;
+  }
+  
+  .section_services {
+    align-items: stretch;
+  }
+  
+  .section__title {
+    box-sizing: border-box; 
+    margin: 0px;   
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .section__subtitle { 
+    margin: 0px;   
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .section__text { 
+    margin: 5px 0px 0px 0px;
+    padding: 0px; 
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #000000;
+  }

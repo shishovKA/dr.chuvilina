@@ -1,0 +1,14 @@
+.footer {
+    width: 100%;
+    min-height: 100px;
+    height: 100%;
+    background-color: rgba(89,212,171, 0.7);
+  
+    box-sizing: border-box; 
+    padding: 0px 25px 0px 35px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto;
+    font-family: 'Be Vietnam', sans-serif;
+  }

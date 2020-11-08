@@ -1,0 +1,22 @@
+
+
+.section__title_place_reserve {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .reserve__container{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+
+  .button__container {
+    width: 45%;
+  }
+  
+
+  
