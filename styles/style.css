@@ -3,13 +3,29 @@
 @import "./footer/footer.css";
 @import "./popup/popup.css";
 
+html { 
+  font-size: 62.5%;
+  background-color:  #F7F6F3; 
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+}
 
 .page {
   box-sizing: border-box; 
-  padding: 0px 25px 40px 25px;
+  padding: 0px 4rem 40px;
   width: 100%;
   min-width: 320px;
-  max-width: 480px;
+  max-width: 768px;
   margin: 0 auto;
   font-family: 'Be Vietnam', sans-serif;
   background-color:  #F7F6F3;

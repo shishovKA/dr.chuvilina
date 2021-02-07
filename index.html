@@ -7,8 +7,8 @@
 
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
- 
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;400;500&display=swap" rel="stylesheet">
     <title>💉dr.chuvilina</title>
 
 </head>
@@ -17,34 +17,34 @@
     <div class="page">
 
         <header class="header">
-            <div class="header__border">
-                <div class="header__container">
-                    <h1 class="header__title">Dr.Chuvilina</h1>
 
-                    <ul class="header__list" type="none">
-                        <li class="header__subtitle">врач</li>
-                        <li class="header__subtitle">дерматолог</li>
-                        <li class="header__subtitle">косметолог</li>
-                    </ul>
+            <div class="header__container">
+                <h1 class="header__title">Dr. Chuvilina</h1>
 
-                </div>
+                <ul class="header__list" type="none">
+                    <li class="header__subtitle">врач</li>
+                    <li class="header__subtitle">дерматолог</li>
+                    <li class="header__subtitle">косметолог</li>
+                </ul>
 
-                <div class="avatar__container">
-                    <img class="avatar__img" src="./images/avatar.jpg" alt="Фото доктора">
-                </div>
             </div>
+
+            <div class="avatar__container">
+                <img class="avatar__img" src="./images/avatar.jpg" alt="Фото доктора">
+            </div>
+
 
         </header>
 
+        
         <section class="section section_name">
-            <h2 class="section__title section__title_place_name">👩🏼‍⚕️ Маргарита Олеговна Чувилина</h2>
+            <h2 class="section__title_place_name">👩🏼‍⚕️ Маргарита Олеговна Чувилина</h2>
         </section>
-
 
 
         <section class="section">
 
-            <h2 class="section__title ">💡 О себе:</h2>
+            <h2 class="section__title ">💡 О себе</h2>
 
             <p class="section__text">
                 Я врач дерматолог косметолог,
@@ -64,27 +64,26 @@
 
         <section class="section">
 
-            <h2 class="section__title section__title_place_education">📚 Образование:</h2>
+            <h2 class="section__title section__title_place_education">📚 Образование</h2>
 
             <ul class="education__list">
                 <li class="education__item">
-                    <p class="education__text_main">Высшее медицинское образование</p>
+                    <p class="education__text_main starpoint">Высшее медицинское образование:</p>
                     <p class="education__text">МГМУ им. И.М.Сеченова</p>
                     <p class="education__text">факультет «Лечебное дело»</p>
                 </li>
                 <li class="education__item">
-                    <p class="education__text_main">Ординатура</p>
+                    <p class="education__text_main starpoint">Ординатура:</p>
                     <p class="education__text">Дерматовенерология</p>
                 </li>
                 <li class="education__item">
-                    <p class="education__text_main">Повышение квалификации</p>
+                    <p class="education__text_main starpoint">Повышение квалификации:</p>
                     <p class="education__text">Врачебная косметология, дерматоонкология;</p>
                     <p class="education__text">Переводчик в сфере профессиональной коммуникации.</p>
                 </li>
             </ul>
 
         </section>
-
 
         <section class="section section_services">
 
@@ -117,9 +116,9 @@
                         <p class="services__text">Плазмотерапия, мезотерапия, биоревитализация.
                         </p>
                         <p class="services__text"> Ботулинотерапия:
-                            <span >Ботокс</span>,
-                            <span >Диспорт</span>,
-                            <span >Ксеомин</span>.
+                            <span>Ботокс</span>,
+                            <span>Диспорт</span>,
+                            <span>Ксеомин</span>.
                         </p>
                         <p class="services__text"> Контурная пластика лица.</p>
                     </div>
@@ -137,15 +136,15 @@
 
         </section>
 
-
+<!--
         <section class="section">
             <h2 class="section__title section__title_place_diplomas">🎓 Дипломы и сертификаты</h2>
 
             <div class="diplomas__container">
-            <p class="section__text_btn_diploma">Посмотреть мои дипломы и сертификаты</p>  
-                
+                <p class="section__text_btn_diploma">Посмотреть мои дипломы и сертификаты</p>
+
                 <img class="certificate" src="./images/certificate.svg">
-                
+
             </div>
 
         </section>
@@ -170,23 +169,23 @@
                 </div>
             </div>
         </section>
-
+-->
     </div>
 
-    <section class="popup hide">
+    <div class="popup hide">
         <img class="diploma" src="./images/diplomas/Диплом Врач.jpg">
         <img class="diploma" src="./images/diplomas/Диплом Дерматолог.jpg">
         <img class="diploma" src="./images/diplomas/Дерматоонкология.jpg">
 
-        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+            style="width:100%">
             <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
             <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-          </div>
-          
-    </section>
+        </div>
+    </div>
 
     <footer class="footer">
 
