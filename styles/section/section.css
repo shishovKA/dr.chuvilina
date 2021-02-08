@@ -7,12 +7,20 @@
 
 
 .section {
+    box-sizing: border-box;
+    margin: 0;
     padding: 3rem 0px 0px 0px;
     width: 100%;
     background-color: #F7F6F3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    animation-name: header-appear;
+    animation-duration: 2.0s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
   }
   
 
@@ -50,4 +58,11 @@
     font-size: 2.2rem;
     font-weight: normal;
     color: #000000;
+  }
+
+  @keyframes header-appear {
+    0%   {opacity: 0;}
+    35%  {opacity: 0;}
+
+    100% {opacity: 1;}
   }

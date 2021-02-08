@@ -6,6 +6,7 @@
 html { 
   font-size: 62.5%;
   background-color:  #F7F6F3; 
+  overflow-x:hidden;
 }
 
 @media (max-width: 600px) {
@@ -22,7 +23,7 @@ html {
 
 .page {
   box-sizing: border-box; 
-  padding: 0px 4rem 40px;
+  padding: 0px 4rem 4rem;
   width: 100%;
   min-width: 320px;
   max-width: 768px;

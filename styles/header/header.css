@@ -1,5 +1,5 @@
 .header {
-    padding: 3rem 0px 0px 0px;
+    padding: 3rem 0px 1.5rem 0px;
     width: 100%;
     max-width: 768px;
     display: flex;
@@ -14,6 +14,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+
+    animation-name: header-appear;
+    animation-duration: 2.0s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
 }
   
 .header__title {
@@ -40,12 +46,19 @@
   
 .avatar__container {
     margin: 0;
-    width: 19rem;
+    width: 18rem;
     max-width: 200px;
     overflow: hidden;
     position: relative;
+    right: 0px;
     box-shadow: 0px 0px 10px 2px rgba(89,212,171,1);
     border-radius: 50%;
+
+    animation-name: avatar-move;
+    animation-duration: 2.0s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
 }
   
 .avatar__container:after {
@@ -59,3 +72,17 @@
     position:absolute;
     top: -20px;
 }
+
+@keyframes avatar-move {
+    0%   {transform: scale(0, 0); right:calc(100% - 19rem);}
+    25%  {transform: scale(1, 1); right:calc(100% - 19rem);}
+
+    100% {}
+  }
+
+@keyframes header-appear {
+    0%   {opacity: 0;}
+    35%  {opacity: 0;}
+
+    100% {opacity: 1;}
+  }

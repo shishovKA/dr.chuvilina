@@ -7,32 +7,106 @@
     margin-top: 14px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     flex-wrap: wrap;
+  }
+
+  .services__text {
+    padding: 0px 0px 1px 0px;
+    margin: 0px;   
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
   }
   
   .services__card {
-    
+    min-height: 230px;
     box-sizing: border-box;
-    width: 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    margin-bottom: 10px;
     background-color: rgba(89,212,171,0.35);
+
+    width: calc((100% / 4) - (3 * 0.8rem / 4));
+    margin-right: 0.8rem;
+    margin-bottom: 10px;
+
+    padding: 0 5px;
+  }
+
+  .services__card:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  @media (max-width: 700px) {
+    .services__card {
+      width: calc((100% / 3) - (2 * 0.8rem / 3));
+      margin-right: 0.8rem;
+    }
+
+    .services__card:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .services__text {  
+      line-height: 2.2rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .services__card {
+      width: calc((100% / 2) - (1 * 0.8rem / 2));
+      margin-right: 0.8rem;
+    }
+
+    .services__card:nth-child(3n) {
+      margin-right: 0.8rem;
+    }
+    
+    .services__card:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    .services__text {  
+      line-height: 2.2rem;
+      font-size: 1.8rem;
+    }
   }
   
   .services__img {
     width: 60%;
     padding: 10px 0px 2px 0px;
+
+    animation-name: card-accent;
+    animation-duration: 4.0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+  }
+
+  .services__card:nth-child(2) .services__img {
+    animation-delay: 0.25s;
+  }
+
+  .services__card:nth-child(3) .services__img {
+    animation-delay: 0.50s;
+  }
+
+  .services__card:nth-child(4) .services__img {
+    animation-delay: 0.75s;
   }
   
   .services__title {
     margin: 0px;  
-    line-height: 16px;
-    font-size: 14px;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #000000;
     text-align: center;
@@ -40,20 +114,18 @@
   
   .services__textcontainer {
     background-color: rgba(256,256,256,0.5);
+    padding: 0.5rem 0.2rem;
     border-radius: 15px;
-    margin: 5px 5px;
+    margin: 5px 0px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
-  .services__text {
-    padding: 0px 0px 1px 0px;
-    margin: 0px;   
-    line-height: 13px;
-    font-size: 12px;
-    font-weight: normal;
-    color: #000000;
-    text-align: center;
+
+  @keyframes card-accent {
+    0%   {transform: scale(1.05, 1.05);}
+    5%  {transform: scale(1, 1);}
   }
+
+  
