@@ -1,14 +1,9 @@
-
-
 const btnDiploma = document.querySelector('.certificate');
 const popup = document.querySelector('.popup');
-
 
 btnDiploma.addEventListener('click', function(e) {
     popup.classList.toggle('hide');
 })
-
-
 
 var slideIndex = 1;
 showDivs(slideIndex);

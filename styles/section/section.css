@@ -41,6 +41,24 @@
     margin: 0px 0px 0.5rem 0px;
   }
 
+  .section__title_place_center {
+    text-align: center;
+    align-self: center;
+    min-width: 67%;
+  }
+
+  @media (max-width: 600px) {
+    .section__title_place_center {
+      min-width: 70%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section__title_place_center {
+      min-width: 80.5%;
+    }
+  }
+
   .section__subtitle { 
     margin: 0px;   
     line-height: 25px;
