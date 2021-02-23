@@ -1,10 +1,11 @@
-const btnDiploma = document.querySelector('.certificate');
+//const btnDiploma = document.querySelector('.certificate');
 const popup = document.querySelector('.popup');
 
-btnDiploma.addEventListener('click', function(e) {
-    popup.classList.toggle('hide');
-})
+//btnDiploma.addEventListener('click', function(e) {
+//    popup.classList.toggle('hide');
+//})
 
+/*
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -31,3 +32,5 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
+
+*/
