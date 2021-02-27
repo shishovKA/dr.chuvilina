@@ -3,7 +3,6 @@ const btnClose = document.getElementById('btn-close');
 const popup = document.querySelector('.popup');
 
 document.addEventListener('keypress', (e) => {
-  console.log(e);
   if (e.key == "Escape") {
     popup.classList.add('hide');
   }

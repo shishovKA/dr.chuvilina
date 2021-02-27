@@ -40,6 +40,15 @@
     animation-timing-function: ease-in-out;
   }
 
+  .diplom-slider::before {
+    content: '';
+    z-index: 1;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(247,246,243,1) 0%, rgba(247,246,243,0) 20%, rgba(247,246,243,0) 50%, rgba(247,246,243,0) 80%, rgba(247,246,243,1) 100%);
+  }
+
   .diplom__btn {
     width: 100%;
     text-align: center;
