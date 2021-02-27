@@ -1,36 +1,45 @@
-//const btnDiploma = document.querySelector('.certificate');
+const btnDiploma = document.getElementById('btn-diploma');
+const btnClose = document.getElementById('btn-close');
 const popup = document.querySelector('.popup');
 
-//btnDiploma.addEventListener('click', function(e) {
-//    popup.classList.toggle('hide');
-//})
-
-/*
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+document.addEventListener('keypress', (e) => {
+  console.log(e);
+  if (e.key == "Escape") {
+    popup.classList.add('hide');
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+});
+
+btnDiploma.addEventListener('click', () => {
+    popup.classList.remove('hide');
+});
+
+btnClose.addEventListener('click', () => {
+  popup.classList.add('hide');
+});
+
+
+// Next/previous controls
+const plusSlides = (n) => {
+  showSlides(slideIndex += n);
 }
 
-*/
+const showSlides = (n) => {
+  let i;
+  const slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "flex";
+}
+
+const prevBtn = document.getElementById('prev-btn');
+prevBtn.addEventListener('click', () => { plusSlides(-1) });
+
+const nextBtn = document.getElementById('next-btn');
+nextBtn.addEventListener('click', () => { plusSlides(1) });
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
