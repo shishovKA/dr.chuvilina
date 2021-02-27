@@ -122,8 +122,6 @@ var btnDiploma = document.getElementById('btn-diploma');
 var btnClose = document.getElementById('btn-close');
 var popup = document.querySelector('.popup');
 document.addEventListener('keypress', function (e) {
-  console.log(e);
-
   if (e.key == "Escape") {
     popup.classList.add('hide');
   }
@@ -196,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54810" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58340" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

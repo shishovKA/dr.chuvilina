@@ -31,6 +31,7 @@
 }
   
 .header__list {
+    list-style-type: none;
     margin: 0px;
     padding: 0px 0px 0px 0px;
 }
@@ -365,6 +366,15 @@
     animation-timing-function: ease-in-out;
   }
 
+  .diplom-slider::before {
+    content: '';
+    z-index: 1;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(247,246,243,1) 0%, rgba(247,246,243,0) 20%, rgba(247,246,243,0) 50%, rgba(247,246,243,0) 80%, rgba(247,246,243,1) 100%);
+  }
+
   .diplom__btn {
     width: 100%;
     text-align: center;
@@ -476,19 +486,56 @@
     100% {opacity: 1;}
   }
 .footer {
-    width: 100%;
-    min-height: 100px;
-    height: 100%;
-    background-color: rgba(89,212,171, 0.7);
-  
     box-sizing: border-box; 
-    padding: 0px 25px 0px 35px;
+    background-color: rgba(89,212,171, 0.7);
+    font-family: 'Be Vietnam', sans-serif;
+    color: #fff;
+    box-sizing: border-box; 
+    width: 100%;
+  }
+
+.footer__content {
+    box-sizing: border-box; 
     width: 100%;
     min-width: 320px;
-    max-width: 480px;
+    max-width: 768px;
     margin: 0 auto;
-    font-family: 'Be Vietnam', sans-serif;
-  }
+    padding: 0px 4rem 2rem 4rem;
+}
+
+.footer__title {
+  text-align: center;
+  margin: 0;
+  padding: 2rem 0px 2rem;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.footer__list {
+  max-width: 30rem;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+.social-icon {
+  width: 4.5rem;
+  margin-right: 1.0rem;
+}
 .popup {
     box-sizing: border-box;
     position: fixed;
@@ -498,6 +545,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, .75);
     font-family: 'Be Vietnam', sans-serif;
+    z-index: 2;
 }
 
 #btn-close {
@@ -659,7 +707,7 @@ html {
 
 .page {
   box-sizing: border-box; 
-  padding: 0px 4rem 4rem;
+  padding: 0px 4rem 2rem;
   width: 100%;
   min-width: 320px;
   max-width: 768px;
