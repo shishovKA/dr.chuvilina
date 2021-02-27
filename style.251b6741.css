@@ -496,21 +496,144 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    background-color: rgba(0, 0, 0, .75);
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+#btn-close {
+    position: absolute;
+    top: 3.0rem;
+    right: 3.0rem;
+    width: 5.0rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#btn-close:hover {
+    transform: scale(1.15);
 }
   
-.diploma {
-    height: 30%;
+.diploma-img {
+    max-height: 80vh;
+    max-width: 95vw;
 }
   
 .hide {
     display: none;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  box-sizing: border-box;  
+  display: none;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0;
+  }
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slide-text {
+
+  padding-bottom: 3.0rem;  
+  text-align: center;
+
+  margin: 0px 0px;
+  line-height: 2.7rem;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #fff;
+
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #fff;
+  line-height: 2.0rem;
+  font-size: 1.8rem;
+  padding-top: 3.0rem;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+*/
 html { 
   font-size: 62.5%;
   background-color:  #F7F6F3; 

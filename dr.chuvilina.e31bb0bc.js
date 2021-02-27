@@ -118,41 +118,57 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-//const btnDiploma = document.querySelector('.certificate');
-var popup = document.querySelector('.popup'); //btnDiploma.addEventListener('click', function(e) {
-//    popup.classList.toggle('hide');
-//})
+var btnDiploma = document.getElementById('btn-diploma');
+var btnClose = document.getElementById('btn-close');
+var popup = document.querySelector('.popup');
+document.addEventListener('keypress', function (e) {
+  console.log(e);
 
-/*
-var slideIndex = 1;
-showDivs(slideIndex);
+  if (e.key == "Escape") {
+    popup.classList.add('hide');
+  }
+});
+btnDiploma.addEventListener('click', function () {
+  popup.classList.remove('hide');
+});
+btnClose.addEventListener('click', function () {
+  popup.classList.add('hide');
+}); // Next/previous controls
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+var plusSlides = function plusSlides(n) {
+  showSlides(slideIndex += n);
+};
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
+var showSlides = function showSlides(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
+  var slides = document.getElementsByClassName("mySlides");
 
-*/
-},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "flex";
+};
+
+var prevBtn = document.getElementById('prev-btn');
+prevBtn.addEventListener('click', function () {
+  plusSlides(-1);
+});
+var nextBtn = document.getElementById('next-btn');
+nextBtn.addEventListener('click', function () {
+  plusSlides(1);
+});
+var slideIndex = 1;
+showSlides(slideIndex);
+},{}],"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -180,7 +196,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9587" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65459" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -356,5 +372,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/dr.chuvilina.e31bb0bc.js.map

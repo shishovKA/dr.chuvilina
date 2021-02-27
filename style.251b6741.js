@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,57 +184,57 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/header/header.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/header/header.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_name/section_name.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_name/section_name.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_education/section_education.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_education/section_education.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_services/section_services.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_services/section_services.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_reserve/section_reserve.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_reserve/section_reserve.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_diploma/section_diploma.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/_diploma/section_diploma.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\..\\images\\certificate.svg":[["certificate.8d7de09c.svg","images/certificate.svg"],"images/certificate.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/section.css":[function(require,module,exports) {
+},{"./../../../images/certificate.svg":[["certificate.8d7de09c.svg","images/certificate.svg"],"images/certificate.svg"],"_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/section/section.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./_name/section_name.css":"styles/section/_name/section_name.css","./_education/section_education.css":"styles/section/_education/section_education.css","./_services/section_services.css":"styles/section/_services/section_services.css","./_reserve/section_reserve.css":"styles/section/_reserve/section_reserve.css","./_diploma/section_diploma.css":"styles/section/_diploma/section_diploma.css","_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/footer/footer.css":[function(require,module,exports) {
+},{"./_name/section_name.css":"styles/section/_name/section_name.css","./_education/section_education.css":"styles/section/_education/section_education.css","./_services/section_services.css":"styles/section/_services/section_services.css","./_reserve/section_reserve.css":"styles/section/_reserve/section_reserve.css","./_diploma/section_diploma.css":"styles/section/_diploma/section_diploma.css","_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/footer/footer.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/popup/popup.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/popup/popup.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/style.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/style.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./header/header.css":"styles/header/header.css","./section/section.css":"styles/section/section.css","./footer/footer.css":"styles/footer/footer.css","./popup/popup.css":"styles/popup/popup.css","_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./header/header.css":"styles/header/header.css","./section/section.css":"styles/section/section.css","./footer/footer.css":"styles/footer/footer.css","./popup/popup.css":"styles/popup/popup.css","_css_loader":"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -262,7 +262,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9587" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65459" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -438,5 +438,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../../.nvm/versions/node/v15.10.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/style.251b6741.js.map
