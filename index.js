@@ -1,3 +1,4 @@
+
 const btnDiploma = document.getElementById('btn-diploma');
 const btnClose = document.getElementById('btn-close');
 const popup = document.querySelector('.popup');
