@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/shishovKA/dr.chuvilina#readme",
   "dependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
